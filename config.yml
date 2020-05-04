@@ -1,0 +1,16 @@
+title: learning-lab-test
+description: Explore the features and learning curve for making a Learning Lab course
+template:
+  repo: learning-lab-test-template
+  name: learning-lab-test
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
